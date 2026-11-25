@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Collections — Dream Perfume</title>
+  <meta name="description" content="A sample edit of the Dream Perfume tray. Floral, fresh, woody, warm, and musk — to try in the boutique, not to buy online.">
+  <meta name="theme-color" content="#f3efe7">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <!--
+    SAMPLE COLLECTION
+    Copy an <article class="scent-card"> to add a perfume.
+    Edit the name, family label, sentence, notes, monogram, and the two colors.
+    data-family must be one of: floral, fresh, woody, warm, musk
+  -->
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="accent-bar" aria-hidden="true"></div>
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="assets/logo.svg" alt="" width="42" height="42">
+        <span class="logo-type">
+          <span class="logo-name">Dream</span>
+          <span class="logo-sub">Perfume</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="collections.html" aria-current="page">Collections</a>
+        <a href="gifts.html">Gifts</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav-cta" href="contact.html">Visit us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <header class="page-hero">
+      <div class="container">
+        <span class="watermark" aria-hidden="true">Tray</span>
+        <p class="eyebrow">The tray</p>
+        <h1>Collections</h1>
+        <p class="lede">Nine scents from the house, gathered as a first look. Floral, fresh, woody, warm, and musk. Come to the boutique to wear them — this page does not take orders.</p>
+      </div>
+    </header>
+
+    <div class="filter-bar">
+      <div class="container">
+        <div class="filters" role="toolbar" aria-label="Filter by family">
+          <button type="button" class="is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="floral" aria-pressed="false">Floral</button>
+          <button type="button" data-filter="fresh" aria-pressed="false">Fresh</button>
+          <button type="button" data-filter="woody" aria-pressed="false">Woody</button>
+          <button type="button" data-filter="warm" aria-pressed="false">Warm</button>
+          <button type="button" data-filter="musk" aria-pressed="false">Musk</button>
+        </div>
+        <p class="filter-count">Nine scents on the tray.</p>
+      </div>
+    </div>
+
+    <section class="band tight">
+      <div class="container">
+        <div class="scent-grid reveal">
+          <article class="scent-card" id="noor" data-family="floral" style="--wash:#f8ecee">
+            <div class="bottle-well" aria-hidden="true">
+              <div class="bottle" style="--liquid:#9a3450">
+                <span class="cap"></span><span class="collar"></span><span class="neck"></span>
+                <span class="glass"><span class="liquid"></span><span class="shine"></span><span class="monogram">N</span></span>
+              </div>
+            </div>
+            <div class="copy">
+              <p class="family">Floral</p>
+              <h2>Noor</h2>
+              <p class="scent-line">Light through a curtained room.</p>
+              <ul class="notes">
+                <li>Damask rose</li>
+                <li>Peony</li>
+                <li>Soft musk</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="scent-card" id="amber-veil" data-family="warm" style="--wash:#f8f1e6">
+            <div class="bottle-well" aria-hidden="true">
+              <div class="bottle" style="--liquid:#c56a2a">
+                <span class="cap"></span><span class="collar"></span><span class="neck"></span>
+                <span class="glass"><span class="liquid"></span><span class="shine"></span><span class="monogram">A</span></span>
+              </div>
+            </div>
+            <div class="copy">
+              <p class="family">Amber</p>
+              <h2>Amber Veil</h2>
+              <p class="scent-line">Warmth that stays after sunset.</p>
+              <ul class="notes">
+                <li>Amber</li>
+                <li>Vanilla bean</li>
+                <li>Sandalwood</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="scent-card" id="coastal-drift" data-family="fresh" style="--wash:#e7f1f2">
+            <div class="bottle-well" aria-hidden="true">
+              <div class="bottle" style="--liquid:#3d8494">
+                <span class="cap"></span><span class="collar"></span><span class="neck"></span>
+                <span class="glass"><span class="liquid"></span><span class="shine"></span><span class="monogram">C</span></span>
+              </div>
+            </div>
+            <div class="copy">
+              <p class="family">Fresh</p>
+              <h2>Coastal Drift</h2>
+              <p class="scent-line">Linen, an open window, late morning.</p>
+              <ul class="notes">
+                <li>Bergamot</li>
+                <li>Sea salt</li>
+                <li>White tea</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="scent-card" id="midnight-oud" data-family="woody" style="--wash:#f3ece6">
+            <div class="bottle-well" aria-hidden="true">
+              <div class="bottle" style="--liquid:#5a382c">
+                <span class="cap"></span><span class="collar"></span><span class="neck"></span>
+                <span class="glass"><span class="liquid"></span><span class="shine"></span><span class="monogram">M</span></span>
+              </div>
+            </div>
+            <div class="copy">
+              <p class="family">Woody</p>
+              <h2>Midnight Oud</h2>
+              <p class="scent-line">A quiet room after midnight.</p>
+              <ul class="notes">
+                <li>Oud</li>
+                <li>Smoked cedar</li>
+                <li>Leather</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="scent-card" id="velvet-fig" data-family="warm" style="--wash:#f1f4e8">
+            <div class="bottle-well" aria-hidden="true">
+              <div class="bottle" style="--liquid:#6a7f3a">
+                <span class="cap"></span><span class="collar"></span><span class="neck"></span>
+                <span class="glass"><span class="liquid"></span><span class="shine"></span><span class="monogram">V</span></span>
+              </div>
+            </div>
+            <div class="copy">
+              <p class="family">Gourmand</p>
+              <h2>Velvet Fig</h2>
+              <p class="scent-line">Ripe fruit in warm shade.</p>
+              <ul class="notes">
+                <li>Fig leaf</li>
+                <li>Coconut milk</li>
+                <li>Tonka</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="scent-card" id="white-petal" data-family="floral" style="--wash:#fbeff2">
+            <div class="bottle-well" aria-hidden="true">
+              <div class="bottle" style="--liquid:#c46b86">
+                <span class="cap"></span><span class="collar"></span><span class="neck"></span>
+                <span class="glass"><span class="liquid"></span><span class="shine"></span><span class="monogram">W</span></span>
+              </div>
+            </div>
+            <div class="copy">
+              <p class="family">Floral</p>
+              <h2>White Petal</h2>
+              <p class="scent-line">Flowers cut this morning.</p>
+              <ul class="notes">
+                <li>Jasmine</li>
+                <li>Neroli</li>
+                <li>Clean cotton</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="scent-card" id="spice-atelier" data-family="warm" style="--wash:#f8eee8">
+            <div class="bottle-well" aria-hidden="true">
+              <div class="bottle" style="--liquid:#8d3f2c">
+                <span class="cap"></span><span class="collar"></span><span class="neck"></span>
+                <span class="glass"><span class="liquid"></span><span class="shine"></span><span class="monogram">S</span></span>
+              </div>
+            </div>
+            <div class="copy">
+              <p class="family">Spice</p>
+              <h2>Spice Atelier</h2>
+              <p class="scent-line">A wooden drawer of spices.</p>
+              <ul class="notes">
+                <li>Cardamom</li>
+                <li>Saffron</li>
+                <li>Birch</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="scent-card" id="soft-linen" data-family="musk" style="--wash:#f6f3ef">
+            <div class="bottle-well" aria-hidden="true">
+              <div class="bottle" style="--liquid:#a89080">
+                <span class="cap"></span><span class="collar"></span><span class="neck"></span>
+                <span class="glass"><span class="liquid"></span><span class="shine"></span><span class="monogram">L</span></span>
+              </div>
+            </div>
+            <div class="copy">
+              <p class="family">Musk</p>
+              <h2>Soft Linen</h2>
+              <p class="scent-line">Close, clean, barely there.</p>
+              <ul class="notes">
+                <li>Iris</li>
+                <li>Pale woods</li>
+                <li>Skin musk</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="scent-card" id="orchard-hour" data-family="fresh" style="--wash:#f2f6ea">
+            <div class="bottle-well" aria-hidden="true">
+              <div class="bottle" style="--liquid:#7d9a4a">
+                <span class="cap"></span><span class="collar"></span><span class="neck"></span>
+                <span class="glass"><span class="liquid"></span><span class="shine"></span><span class="monogram">O</span></span>
+              </div>
+            </div>
+            <div class="copy">
+              <p class="family">Green</p>
+              <h2>Orchard Hour</h2>
+              <p class="scent-line">The first cool hour of spring.</p>
+              <ul class="notes">
+                <li>Green apple</li>
+                <li>Petitgrain</li>
+                <li>Moss</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <p class="filter-empty" hidden>Nothing in this family in the sample edit yet.</p>
+      </div>
+    </section>
+
+    <section class="band" style="padding-top:0">
+      <div class="container closing">
+        <h2>Want one of these on the tray?</h2>
+        <p class="lede">Tell us the name when you visit, or send a note before you come. We will have a blotter, and skin if you want to stay with it.</p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="contact.html">Contact the boutique</a>
+          <a class="btn btn-line" href="gifts.html">See gift packs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Dream Perfume</p>
+        <p class="footer-note">A fragrance boutique. The collection is here to browse. The bottles are in the shop.</p>
+      </div>
+      <nav aria-label="Footer">
+        <p class="footer-label">Explore</p>
+        <a href="index.html">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="gifts.html">Gifts</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-visit">
+        <p class="footer-label">Visit</p>
+        <p class="footer-note">Come by to try a scent on your skin, or to have a gift wrapped.</p>
+        <a class="text-link" href="contact.html">Hours and address</a>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <p>© 2026 Dream Perfume</p>
+      <p>In the boutique, not online.</p>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

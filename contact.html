@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Dream Perfume</title>
+  <meta name="description" content="Visit Dream Perfume to try the collection or plan a gift. Hours, address, and a note to the boutique.">
+  <meta name="theme-color" content="#f3efe7">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <!--
+    SHOP DETAILS
+    Replace the address, phone, and email below.
+    The form reads the email from the link with class "shop-email".
+    Delete the placeholder notice once the details are real.
+  -->
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="accent-bar" aria-hidden="true"></div>
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="assets/logo.svg" alt="" width="42" height="42">
+        <span class="logo-type">
+          <span class="logo-name">Dream</span>
+          <span class="logo-sub">Perfume</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="gifts.html">Gifts</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="nav-cta" href="contact.html">Visit us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <header class="page-hero">
+      <div class="container">
+        <span class="watermark" aria-hidden="true">Visit</span>
+        <p class="eyebrow">The boutique</p>
+        <h1>Contact us</h1>
+        <p class="lede">Walk in to try the tray, or send a note if you are choosing a gift and want us to set a few scents aside. We do not take payment on this website.</p>
+        <p class="notice">These contact details are placeholders for the preview. Put your real street, city, phone, and email here before you share the site. The .example address does not receive messages.</p>
+      </div>
+    </header>
+
+    <section class="band tight">
+      <div class="container contact-grid reveal">
+        <div>
+          <dl class="details">
+            <div>
+              <dt>Visit</dt>
+              <dd>
+                Dream Perfume<br>
+                14 Orchard Street<br>
+                Sample City
+              </dd>
+            </div>
+            <div>
+              <dt>Hours</dt>
+              <dd>
+                Tuesday – Sunday · 11:00 – 20:00<br>
+                Monday · Closed
+              </dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+00000000000">00000 000 000</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a class="shop-email" href="mailto:hello@dreamperfume.example">hello@dreamperfume.example</a></dd>
+            </div>
+            <div>
+              <dt>Good to know</dt>
+              <dd>Walk-ins are welcome. A note ahead helps when you are choosing a gift for someone else.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <form class="visit-form form-card">
+          <h2>Write to the boutique</h2>
+          <p class="form-help">This opens your email app with the message ready to send. Nothing is stored on the website.</p>
+          <p class="form-status" role="status" hidden></p>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone <span style="letter-spacing:0;text-transform:none;font-weight:400">(optional)</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="interest">I would like to</label>
+            <select id="interest" name="interest" required>
+              <option value="" selected disabled>Choose one</option>
+              <option>Visit the boutique</option>
+              <option>Ask about a gift</option>
+              <option>Ask about a scent</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" maxlength="1000" required placeholder="The scent, the occasion, or when you hope to come in."></textarea>
+          </div>
+          <button class="btn btn-dark" type="submit">Open email to send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Dream Perfume</p>
+        <p class="footer-note">A fragrance boutique. The collection is here to browse. The bottles are in the shop.</p>
+      </div>
+      <nav aria-label="Footer">
+        <p class="footer-label">Explore</p>
+        <a href="index.html">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="gifts.html">Gifts</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-visit">
+        <p class="footer-label">Visit</p>
+        <p class="footer-note">Come by to try a scent on your skin, or to have a gift wrapped.</p>
+        <a class="text-link" href="contact.html">Hours and address</a>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <p>© 2026 Dream Perfume</p>
+      <p>In the boutique, not online.</p>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
